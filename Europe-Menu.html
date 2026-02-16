@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolo Wiki - Sector Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;600&family=Noto+Sans+JP:wght@400;700&family=Share+Tech+Mono&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+         :root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --accent: #3b82f6; /* Azure Blue */
+    --accent-glow: rgba(59, 130, 246, 0.5);
+    --gold: #fbbf24;
+    --text: #f8fafc;
+    --font-head: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text);
+    font-family: var(--font-head);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Hexagon Pattern Background */
+.background-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(#334155 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.top-bar {
+    background: rgba(30, 41, 59, 0.9);
+    border-bottom: 2px solid var(--accent);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+}
+
+.main-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(#fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-label {
+    color: var(--gold);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.menu-card {
+    background: var(--card-bg);
+    border: 1px solid #334155;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+.card-icon { font-size: 2rem; margin-bottom: 10px; }
+.card-decor { 
+    position: absolute; top: 0; right: 0; 
+    width: 0; height: 0; 
+    border-style: solid; 
+    border-width: 0 50px 50px 0; 
+    border-color: transparent var(--accent) transparent transparent; 
+    opacity: 0.5;
+}
+.bottom-bar { text-align: center; padding: 20px; font-size: 0.8rem; color: #64748b; }
+    </style>
+
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <nav class="top-bar">
+        <div class="logo">NICOLO ARCHIVES // <span class="sector-id">SECTOR 01</span></div>
+        <div class="status-indicator">STATUS: ONLINE</div>
+    </nav>
+
+    <main class="menu-container">
+        <header class="page-header">
+            <div class="sub-label">SELECT DATABASE</div>
+            <h1 class="main-title">THEATER COMMAND</h1>
+            <p class="flavor-text">"Access restricted to clearance level 4. Choose your operation zone."</p>
+        </header>
+
+        <div class="grid-menu">
+            <a href="factions.html" class="menu-card">
+                <div class="card-icon">⚔️</div>
+                <div class="card-content">
+                    <h3>Combatants</h3>
+                    <p>Factions, Warlords, and Units</p>
+                </div>
+                <div class="card-decor"></div>
+            </a>
+
+            <a href="battles.html" class="menu-card">
+                <div class="card-icon">📍</div>
+                <div class="card-content">
+                    <h3>Frontlines</h3>
+                    <p>Key Battles and Maps</p>
+                </div>
+                <div class="card-decor"></div>
+            </a>
+
+            <a href="tech.html" class="menu-card">
+                <div class="card-icon">⚙️</div>
+                <div class="card-content">
+                    <h3>Logistics</h3>
+                    <p>Weaponry, Vehicles, and Tech</p>
+                </div>
+                <div class="card-decor"></div>
+            </a>
+
+            <a href="lore.html" class="menu-card">
+                <div class="card-icon">📜</div>
+                <div class="card-content">
+                    <h3>Manifesto</h3>
+                    <p>Timeline and Documents</p>
+                </div>
+                <div class="card-decor"></div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        SYSTEM VERION 4.2.2 // CONNECTION SECURE
+    </footer>
+
+</body>
+</html>
