@@ -3,122 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese State Army - Wikipedia</title>
+    <title>Japanese State Army - The Fire Rises Wiki</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
         body {
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
-            background-color: #f6f6f6;
-            color: #202122;
-        }
-        #content {
-            max-width: 1000px;
-            margin: 2em auto;
-            background-color: #ffffff;
-            border: 1px solid #a7d7f9;
-            padding: 2em;
-        }
-        h1, h2, h3 {
-            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
-            border-bottom: 1px solid #a2a9b1;
-            padding-bottom: 0.3em;
-            font-weight: normal;
-        }
-        h1 {
-            font-size: 2.2em;
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        #siteSub {
-            color: #54595d;
-        }
-        a {
-            color: #0645ad;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .infobox {
-            border: 1px solid #aaa;
-            padding: 0.5em;
-            margin-left: 1em;
-            float: right;
-            width: 300px;
-            font-size: 90%;
-            background-color: #f9f9f9;
-            clear: right;
-        }
-        .infobox h3 {
-            text-align: center;
-            margin-top: 0;
-            font-size: 1.2em;
-            border: none;
-        }
-        .infobox img {
-            width: 100%;
-        }
-        .infobox p {
-            margin: 0.5em 0;
-        }
-        .infobox hr {
-            border: none;
-            border-top: 1px solid #aaa;
-        }
-        .infobox ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0.5em 0;
-        }
-        .infobox h4 {
-            margin-bottom: 0.5em;
-            font-size: 1em;
-            border: none;
-        }
-        .ambox {
-            border: 1px solid #a2a9b1;
-            border-left: 10px solid #36c;
-            padding: 0.5em 1em;
-            margin-bottom: 1em;
-            background-color: #f8f9fa;
-        }
-        ol.references {
-            font-size: 90%;
-        }
-        
-        /* Style for new image placeholders */
-        .image-placeholder {
-            border: 1px solid #a2a9b1;
-            background-color: #f9f9f9;
-            padding: 5px;
-            font-size: 90%;
-            float: right;
-            margin: 0.5em 0 1.3em 1.3em;
-            width: 300px;
-            clear: right;
-        }
-        .image-placeholder img {
-            width: 100%;
-            background-color: #ccc;
-        }
-        .image-caption {
-            padding: 0.5em 0.2em;
-            line-height: 1.4;
-            text-align: left;
+            background-color: #121212;
+            color: #e0e0e0;
         }
 
+        #content {
+            max-width: 1100px;
+            margin: 2em auto;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            box-shadow: 0 0 15px rgba(0,0,0,0.7);
+            padding: 2em;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            border-bottom: 3px solid #8b0000; /* Blood Red */
+            margin-bottom: 0.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #8b0000;
+            padding-bottom: 0.2em;
+            margin-top: 1.5em;
+        }
+
+        a {
+            color: #ff4d4d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff9999;
+            text-decoration: underline;
+        }
+
+        /* TFR Style Infobox */
+        .infobox {
+            background-color: #252525;
+            border: 2px solid #444;
+            padding: 0;
+            margin-left: 1.5em;
+            float: right;
+            width: 320px;
+            font-size: 0.9em;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .infobox-header {
+            background-color: #0d0d0d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 1.4em;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        .infobox img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #444;
+        }
+
+        .infobox-data {
+            padding: 10px;
+        }
+
+        .infobox-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 4px;
+        }
+
+        .infobox-label {
+            font-weight: bold;
+            color: #aaa;
+        }
+
+        .infobox-value {
+            text-align: right;
+            color: #fff;
+        }
+
+        .ideology-box {
+            background-color: #383838;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+            border-left: 5px solid #5c5c5c; /* Grey for Paternal Autocracy/Stratocracy */
+        }
+
+        /* Image styling */
+        .image-container {
+            border: 1px solid #444;
+            background-color: #252525;
+            padding: 5px;
+            margin: 1em 0 1em 1em;
+            float: right;
+            width: 300px;
+        }
+        
+        .image-container img {
+            width: 100%;
+            filter: contrast(1.1) sepia(0.2); /* Slight gritty filter */
+        }
+
+        .caption {
+            font-size: 0.85em;
+            color: #aaa;
+            padding: 5px;
+            font-style: italic;
+        }
+
+        /* Quote Block */
+        .flavor-text {
+            border-left: 3px solid #8b0000;
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ccc;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
+            .infobox, .image-container {
+                float: none;
+                width: 100%;
+                margin: 0 0 1em 0;
+            }
             #content {
                 padding: 1em;
                 margin: 0;
                 border: none;
-            }
-            .infobox, .image-placeholder {
-                float: none;
-                width: auto;
-                margin-left: 0;
-                margin-bottom: 1em;
             }
         }
     </style>
@@ -126,159 +173,120 @@
 <body>
 
     <div id="content">
-        <h1 id="firstHeading" class="firstHeading">Japanese State Army</h1>
-        <div id="siteSub">From Nicolo-Wikipedia, the free encyclopedia</div>
-        <div id="bodyContent">
-            <p>
-                <b>This article is about the emergency military force established in response to the 2025 Necronyl pandemic. For the pre-2025 armed forces, see <a href="https://en.wikipedia.org/wiki/Japan_Self-Defense_Forces" title="Japan Self-Defense Forces">Japan Self-Defense Forces</a>.</b>
-            </p>
+        <h1>Japanese State Army</h1>
+        <div style="font-size: 0.9em; color: #888; margin-bottom: 1em;">From The Fire Rises Wiki</div>
 
-            <aside class="infobox">
-                <h3>Japanese State Army<br>国家陸軍 (Kokka Rikugun)</h3>
-                <img src="https://i.imgur.com/jAgumbw.png" alt="Flag of the Japanese State Army">
-                <p style="text-align: center; font-style: italic;">"For the People, For the Nation, For the Future."</p>
-                <hr>
-                <p><strong>Founded:</strong> June 8, 2025</p>
-                <p><strong>Country:</strong> &nbsp; Japan</p>
-                <p><strong>Type:</strong> &nbsp; Unified Armed Forces</p>
-                <p><strong>Role:</strong>
-                <ul>
-                    <li>National defense</li>
-                    <li>Domestic security</li>
-                    <li>Bio-Threat containment</li>
-                    <li>Civilian protection</li>
-                </ul>
-                </p>
-                <p><strong>Legal Authority:</strong> National Emergency and State Defense Act (2025)</p>
-                <p><strong>Headquarters:</strong> Ichigaya, Tokyo</p>
-                <hr>
-                <h4>Leadership</h4>
-                <p><strong>Supreme Commander:</strong> Prime Minister of Japan</p>
-                <p><strong>Chief of the General Staff:</strong> General Yoshihide Yoshida</p>
-                <hr>
-                <h4>Component Commands</h4>
-                <ul>
-                    <li>JSA Ground Command</li>
-                    <li>JSA Naval Command</li>
-                    <li>JSA Air Command</li>
-                    <li>Scientific & Medical Corps</li>
-                </ul>
-            </aside>
-
-            <p>
-                The <b>Japanese State Army (JSA)</b>, or <b>Kokka Rikugun (国家陸軍)</b>, is the unified armed forces of Japan, established on June 8, 2025, through the National Emergency and State Defense Act. It was formed by the emergency reorganization of the Japan Self-Defense Forces (JSDF) to contend with the global pandemic caused by the failed cancer therapeutic, Necronyl, and the resulting wave of aggressive, regenerative undead it created.<sup><a href="#ref1">[1]</a></sup>
-            </p>
-            <p>
-                The formation of the JSA marks a significant departure from Japan's post-World War II defense posture, granting the military broad powers to operate domestically to quell the undead threat, preserve national continuity, and restore order.<sup><a href="#ref2">[2]</a></sup>
-            </p>
-
-            <h2>History</h2>
-            <hr/>
-            <h3>The Necronyl Crisis</h3>
-
-            <aside class="image-placeholder">
-                <img src="https://i.imgur.com/3krOxPB.jpeg" alt="Placeholder image of JSA soldiers in combat.">
-                <div class="image-caption">
-                    JSA Ground Command soldiers engage multiple Class-7 Biological Threats during the initial outbreak in central Tokyo.
-                </div>
-            </aside>
-
-            <p>
-                In early 2025, the Russian-developed drug Necronyl was distributed globally as a revolutionary cancer cure. By April, severe side effects were reported, and by May, the first cases of deceased patients reanimating with extreme aggression and regenerative abilities were documented.<sup><a href="#ref3">[3]</a></sup> The infection spread exponentially through bites and fluid contact, leading to the collapse of civil services in numerous countries.
-            </p>
-            <p>
-                In Japan, the existing legal framework of the JSDF was deemed inadequate for a domestic biological crisis of this scale, as it was primarily structured for national defense against foreign state actors and disaster relief. As undead outbreaks overwhelmed police and medical facilities in major cities, the National Diet passed the "National Emergency and State Defense Act" in an emergency session.<sup><a href="#ref4">[4]</a></sup>
-            </p>
-            <h3>Formation</h3>
-            <p>
-                The Act authorized the immediate restructuring of the Japan Ground, Maritime, and Air Self-Defense Forces into a single, integrated command: the Japanese State Army. The primary objective of this reorganization was to eliminate inter-branch command friction and enable a swift, decisive response to the rapidly escalating domestic threat. The legal constraints of Article 9 of the Japanese Constitution were temporarily suspended under the emergency provisions of the new law, allowing the JSA to engage threats on Japanese soil with military force.<sup><a href="#ref5">[5]</a></sup>
-            </p>
-
-            <h2>Mandate and Legal Status</h2>
-            <hr/>
-            <p>
-                The JSA operates under a threefold mandate defined by the Emergency Act:
-            </p>
-            <ol>
-                <li><b>Protect the People:</b> Safeguard uninfected Japanese citizens from the undead.</li>
-                <li><b>Preserve the Nation:</b> Ensure the continuity of government and protect national sovereignty.</li>
-                <li><b>Restore Order:</b> Reclaim territory lost to the infected and re-establish civil control.</li>
-            </ol>
-            <p>
-                The legal status of the JSA is unprecedented in modern Japanese history. It is an active military force with the authority to enforce quarantines, conduct urban warfare, and use lethal force against its own citizens if they are classified as infected under its operational doctrine.<sup><a href="#ref6">[6]</a></sup>
-            </p>
-
-            <h2>Structure</h2>
-            <hr/>
-            <p>
-                The former branches of the JSDF were consolidated under a central command to streamline operations against the singular, nationwide threat.
-            </p>
-            <ul>
-                <li><b>JSA Ground Command:</b> The largest component, responsible for frontline engagement, quarantine enforcement, urban combat, and civilian evacuation.</li>
-                <li><b>JSA Naval Command:</b> Secures Japan's coastlines to prevent the spread of infection by sea and provides logistical support and offshore command centers.</li>
-                <li><b>JSA Air Command:</b> Conducts reconnaissance, provides air support for ground operations, and facilitates the rapid deployment of specialized units.</li>
-            </ul>
-
-            <h3>Specialized Units</h3>
-
-            <aside class="image-placeholder">
-                <img src="https://i.imgur.com/fgmpSBT.png" alt="Placeholder image of a Quarantine & Containment Battalion unit.">
-                <div class="image-caption">
-                    A Quarantine & Containment Battalion (QCB) squad wearing full biohazard gear patrols the perimeter of a newly established Safe Haven.
-                </div>
-            </aside>
-            
-            <p>
-                The unique nature of the Necronyl threat prompted the creation of new, specialized corps:
-            </p>
-            <ul>
-                <li><b>Quarantine & Containment Battalions (QCB):</b> Frontline units tasked with establishing and defending quarantine zones. They are trained in biohazard protocols and crowd control.</li>
-                <li><b>Hunter-Killer Regiments (HKR):</b> Elite offensive units specifically trained and equipped to actively seek out and neutralize high-density undead populations.</li>
-                <li><b>Scientific & Medical Corps (SMC):</b> A unified command of military and civilian scientists and doctors tasked with researching the Necronyl pathogen, developing countermeasures, and advising on military strategy.</li>
-            </ul>
-
-            <h2>Doctrine: The Sakura Protocol</h2>
-            <hr/>
-            
-            <aside class="image-placeholder">
-                <img src="https://i.imgur.com/8SlPv4g.jpeg" alt="Placeholder image of soldiers escorting civilians.">
-                <div class="image-caption">
-                    JSA armored units escorting uninfected civilians transports to a fortified Safe Haven, a key component of the Sakura Protocol's "Prioritization of the Uninfected" tenet.
-                </div>
-            </aside>
-            
-            <p>
-                JSA field operations are governed by a set of rules of engagement known as the <b>Sakura Protocol</b>. This doctrine reclassifies the conflict from a civil unrest or law enforcement action to a biological containment operation.
-            </p>
-            <p>
-                Key tenets of the protocol include:
-            </p>
-            <ul>
-                <li><b>Prioritization of the Uninfected:</b> All strategic and tactical decisions are to prioritize the safety and evacuation of non-infected civilians.</li>
-                <li><b>Absolute Containment:</b> Quarantine zones are considered impermeable biological barriers. Breaches are to be met with lethal force to prevent wider contamination.</li>
-                <li><b>Classification of the Infected:</b> Once an individual is confirmed to be infected and exhibits hostile, post-mortem activity, they are designated a <b>Class-7 Biological Threat</b>. Under the protocol, they forfeit their legal status as citizens and are to be neutralized on sight.</li>
-                <li><b>Reclaim and Fortify:</b> A national strategy focused on establishing fortified "Safe Havens" from which to launch systematic operations to reclaim territory.</li>
-            </ul>
-
-            <h2>See Also</h2>
-            <hr/>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Japan_Self-Defense_Forces">Japan Self-Defense Forces</a></li>
-                <li><a href="https://world-health-organization-necronyl.netlify.app">Necronyl Pandemic</a></li>
-                <li><a href="#">Article 9 of the Japanese Constitution</a></li>
-            </ul>
-
-            <h2>References</h2>
-            <hr/>
-            <ol class="references">
-                <li id="ref1"><b>^</b> "Diet Passes Emergency Defense Act," <i>The Japan Times</i>, June 7, 2025.</li>
-                <li id="ref2"><b>^</b> Ministry of Defense Press Release, June 9, 2025.</li>
-                <li id="ref3"><b>^</b> World Health Organization Global Report on Necronyl, June 2025.</li>
-                <li id="ref4"><b>^</b> "Tokyo Under Siege: Undead Overrun Shibuya," <i>Asahi Shimbun</i>, June 27, 2025.</li>
-                <li id="ref5"><b>^</b> Text of the National Emergency and State Defense Act, 2025.</li>
-                <li id="ref6"><b>^</b> JSA Field Manual 1-01: "The Sakura Protocol," Initial Publication, July 2025.</li>
-            </ol>
+        <div class="flavor-text">
+            "The Constitution died the day the dead began to walk. Now, only the State remains. For the sake of the living, we must become the monsters we fight."
+            <br><span style="font-size: 0.8em; color: #8b0000;">— General Yoshihide Yoshida, Address to the Nation, June 2025</span>
         </div>
+
+        <aside class="infobox">
+            <div class="infobox-header">Japanese State Army<br><span style="font-size: 0.6em;">国家陸軍</span></div>
+            <img src="https://files.catbox.moe/55f9s6.webp" alt="Insignia of the Japanese State Army">
+            
+            <div class="ideology-box" style="border-left: 5px solid #2F4F4F;">
+                Ideology: Stratocracy (Paternalism)
+            </div>
+
+            <div class="infobox-data">
+                <div class="infobox-row">
+                    <span class="infobox-label">Tag:</span>
+                    <span class="infobox-value">JSA</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Leader:</span>
+                    <span class="infobox-value">Gen. Yoshihide Yoshida</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Capital:</span>
+                    <span class="infobox-value">Tokyo (Ichigaya Citadel)</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Government:</span>
+                    <span class="infobox-value">Emergency Military Junta</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Established:</span>
+                    <span class="infobox-value">June 8, 2025</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Allegiance:</span>
+                    <span class="infobox-value">The Remnant</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Status:</span>
+                    <span class="infobox-value">Civil War / Pandemic</span>
+                </div>
+                <div class="infobox-row">
+                    <span class="infobox-label">Strength:</span>
+                    <span class="infobox-value">Est. 180,000 Active</span>
+                </div>
+            </div>
+        </aside>
+
+        <p>
+            The <b>Japanese State Army (JSA)</b> is the primary successor state to the government of Japan following the <b>Necronyl Collapse</b> of 2025. Formed through the invocation of the <i>National Emergency and State Defense Act</i>, the JSA represents the consolidation of the former Japan Self-Defense Forces (JSDF) into a unified, authoritarian military apparatus.
+        </p>
+        <p>
+            Operating out of the fortified Ichigaya Citadel, the JSA is currently engaged in a multi-front war against the "Necrosis" hordes, anarchist insurgencies in Osaka, and the collapse of global civilization. While nominally defending the Japanese people, the JSA is characterized by its draconian <b>Sakura Protocol</b>, which authorizes the summary execution of infected citizens and the suspension of all human rights within the Quarantine Zones.
+        </p>
+
+        <h2>Background: The Collapse</h2>
+        
+        <div class="image-container">
+            <img src="https://files.catbox.moe/6om06a.jpg" alt="JSA soldiers engaging threats">
+            <div class="caption">JSA Ground Command engaging Class-7 targets in the Shinjuku Ruins, c. July 2025.</div>
+        </div>
+
+        <p>
+            The distribution of the Russian pharmaceutical <b>Necronyl</b> in early 2025 was heralded as a medical miracle. By May, the miracle had rotted. The resulting pandemic did not just kill; it reanimated. As the "Necrosis" spread through bites and fluid contact, the Japanese civilian government found itself paralyzed by bureaucracy and Article 9 of the Constitution.
+        </p>
+        <p>
+            With the police overwhelmed and the healthcare system shattered, the National Diet held its final emergency session. Under pressure from the military brass, they passed the <b>National Emergency Act</b>, effectively dissolving the civilian cabinet's power and transferring supreme authority to the General Staff. The JSDF was formally disbanded and immediately reconstituted as the Japanese State Army, freed from the legal shackles of "Self-Defense."
+        </p>
+
+        <h2>The Sakura Protocol</h2>
+        <p>
+            The defining doctrine of the JSA is the <b>Sakura Protocol</b> (桜の議定書), a set of engagement rules that redefines the legal status of Japanese citizens. In the eyes of the JSA, the conflict is not a police action, but a biological war of annihilation.
+        </p>
+        <ul>
+            <li><b>Total Containment:</b> Quarantine Zones are absolute. Any unauthorized movement in or out is met with lethal force.</li>
+            <li><b>Class-7 Designation:</b> Infected individuals are stripped of personhood and classified as "Class-7 Biological Threats." Neutralization is mandatory.</li>
+            <li><b>Asset Denial:</b> Areas deemed unrecoverable are to be firebombed to prevent the infected biomass from spreading to the Safe Havens.</li>
+        </ul>
+
+        <h2>Military Organization</h2>
+        
+        <div class="image-container">
+            <img src="https://files.catbox.moe/01lv53.webp" alt="QCB Unit">
+            <div class="caption">A "Cleaner" squad from the Quarantine & Containment Battalion (QCB) patrolling the perimeter of the Tokyo Green Zone.</div>
+        </div>
+
+        <p>
+            The JSA has abandoned the branch rivalry of the former JSDF, streamlining into functional commands tailored for the apocalypse:
+        </p>
+        <ul>
+            <li><b>Ground Command (Rikugun):</b> The bulk of the forces. They man the walls of the Safe Havens and conduct "Purge Raids" into infected territory.</li>
+            <li><b>Naval Command (Kaigun):</b> Responsible for the "Steel Wall," a blockade ensuring no infected vessels reach the remaining safe ports.</li>
+            <li><b>Scientific & Medical Corps (The SMC):</b> A controversial branch led by former civilian virologists. Rumors persist that the SMC uses captured infected—and political dissidents—for live experimentation to find a cure.</li>
+            <li><b>Hunter-Killer Regiments:</b> The elite of the JSA. Highly mobile units equipped with experimental anti-bio weaponry, tasked with hunting "Alpha" variants of the undead.</li>
+        </ul>
+
+        <h2>Relations</h2>
+        <ul>
+            <li><b>United States Remnant (Yokosuka):</b> Strained. The USFJ remnants hold their bases but refuse to submit to JSA command.</li>
+            <li><b>Osaka Free Zone:</b> Hostile. A coalition of anarchists and surviving yakuza who reject JSA martial law.</li>
+            <li><b>The Infected:</b> Total War.</li>
+        </ul>
+
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="#">The Great Collapse</a></li>
+            <li><a href="#">List of Warlord States in East Asia</a></li>
+            <li><a href="#">Necronyl Pathogen</a></li>
+        </ul>
+
     </div>
 
 </body>
